@@ -20,7 +20,7 @@ class Gradebook {
 private:
     vector<Student> students;
     vector<Assignment> assignments;
-    map<string, map<string, int>> grades; // studentID -> (assignmentName -> grade)
+    map<string, map<string, int>> grades;
 public:
     void add_student(const string& firstName, const string& lastName, const string& id);
     void add_assignment(const string& name, int totalPoints);

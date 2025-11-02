@@ -7,7 +7,7 @@ int main() {
   int choice;
 
   do {
-    cout << "\n===== CSC122 Gradebook Menu =====\n";
+    cout << "\n--- CSC122 Gradebook Menu ---\n";
     cout << "1. Add a student\n";
     cout << "2. Add an assignment\n";
     cout << "3. Enter a grade\n";
