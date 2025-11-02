@@ -4,6 +4,29 @@ You can find the instructions for this lab at [More Than Equations][more-than-eq
 
 We will use [CMake][cmake] to build executables (e.g. tests, the driver program, the benchmarks, etc.). Additionally, we will use [Catch2][catch2] for unit testing and benchmarking.
 
+## Overview
+
+This program implements a simple **Gradebook** system in C++.  
+It allows you to:
+- Add students
+- Add assignments
+- Enter grades
+- Print a formatted report of all students and their grades
+
+The report is printed to the **console** in CSV format, so it’s easy to copy into a spreadsheet if desired.
+
+## How It Works
+
+The program defines a single class: **Gradebook**, which internally manages:
+- A list of **students** (first name, last name, and ID)
+- A list of **assignments** (name and total points)
+- A map of **grades** (per student and assignment)
+
+When you run the program, it demonstrates the Gradebook by:
+1. Adding three students and two assignments
+2. Entering several grades
+3. Printing a formatted grade report
+
 ## Building Executables With CMake
 
 You can use CMake to compile and build the executables for the project. First, you need to create a `build/` directory in the project. The build directory will house all of the compiled files as well as the `Makefile` for the project. Note that we do NOT check the `build/` directory into version control since each person will have to regenerate the executables on their own machine.
