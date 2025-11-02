@@ -18,7 +18,6 @@ private:
 
     std::vector<Student> students;
     std::vector<Assignment> assignments;
-    // grades[student_id][assignment_name] = grade
     std::map<std::string, std::map<std::string, int>> grades;
 
 public:

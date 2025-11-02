@@ -12,7 +12,6 @@ void Gradebook::add_assignment(const std::string &name, int total_points) {
 }
 
 void Gradebook::enter_grade(const std::string &student_name, const std::string &assignment_name, int grade) {
-   // Find student by "First Last"
    for (auto &s : students) {
       std::string full_name = s.first_name + " " + s.last_name;
       if (full_name == student_name) {
